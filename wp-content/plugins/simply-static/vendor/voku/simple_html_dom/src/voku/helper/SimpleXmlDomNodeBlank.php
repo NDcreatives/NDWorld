@@ -1,104 +1,24 @@
-<?php
-
-declare(strict_types=1);
-
-namespace voku\helper;
-
-/**
- * {@inheritdoc}
- */
-class SimpleXmlDomNodeBlank extends AbstractSimpleXmlDomNode implements SimpleXmlDomNodeInterface
-{
-    /**
-     * @param string   $selector
-     * @param int|null $idx
-     *
-     * @return null
-     */
-    public function find(string $selector, $idx = null)
-    {
-        return null;
-    }
-
-    /**
-     * Find nodes with a CSS or xPath selector.
-     *
-     * @param string $selector
-     *
-     * @return SimpleXmlDomInterface[]|SimpleXmlDomNodeInterface<SimpleXmlDomInterface>
-     */
-    public function findMulti(string $selector): SimpleXmlDomNodeInterface
-    {
-        return new self();
-    }
-
-    /**
-     * Find nodes with a CSS or xPath selector.
-     *
-     * @param string $selector
-     *
-     * @return false
-     */
-    public function findMultiOrFalse(string $selector)
-    {
-        return false;
-    }
-
-    /**
-     * Find one node with a CSS or xPath selector.
-     *
-     * @param string $selector
-     *
-     * @return SimpleXmlDomInterface
-     */
-    public function findOne(string $selector)
-    {
-        return new SimpleXmlDomBlank();
-    }
-
-    /**
-     * @param string $selector
-     *
-     * @return false
-     */
-    public function findOneOrFalse(string $selector)
-    {
-        return false;
-    }
-
-    /**
-     * @return string[]
-     */
-    public function innerHtml(): array
-    {
-        return [];
-    }
-
-    /**
-     * alias for "$this->innerHtml()" (added for compatibly-reasons with v1.x)
-     *
-     * @return string[]
-     */
-    public function innertext()
-    {
-        return [];
-    }
-
-    /**
-     * alias for "$this->innerHtml()" (added for compatibly-reasons with v1.x)
-     *
-     * @return string[]
-     */
-    public function outertext()
-    {
-        return [];
-    }
-
-    /**
-     * @return string[]
-     */
-    public function text(): array
-    {
-        return [];
-    }
-}
+<br>
+<font size="1"><table class="xdebug-error xe-uncaught-exception" dir="ltr" border="1" cellspacing="0" cellpadding="1">
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Fatal error: Uncaught Error: Class "voku\helper\AbstractSimpleXmlDomNode" not found in C:\wamp64\www\NDWorld\wp-content\plugins\simply-static\vendor\voku\simple_html_dom\src\voku\helper\SimpleXmlDomNodeBlank.php on line <i>10</i>
+</th></tr>
+<tr><th align="left" bgcolor="#f57900" colspan="5">
+<span style="background-color: #cc0000; color: #fce94f; font-size: x-large;">( ! )</span> Error: Class "voku\helper\AbstractSimpleXmlDomNode" not found in C:\wamp64\www\NDWorld\wp-content\plugins\simply-static\vendor\voku\simple_html_dom\src\voku\helper\SimpleXmlDomNodeBlank.php on line <i>10</i>
+</th></tr>
+<tr><th align="left" bgcolor="#e9b96e" colspan="5">Call Stack</th></tr>
+<tr>
+<th align="center" bgcolor="#eeeeec">#</th>
+<th align="left" bgcolor="#eeeeec">Time</th>
+<th align="left" bgcolor="#eeeeec">Memory</th>
+<th align="left" bgcolor="#eeeeec">Function</th>
+<th align="left" bgcolor="#eeeeec">Location</th>
+</tr>
+<tr>
+<td bgcolor="#eeeeec" align="center">1</td>
+<td bgcolor="#eeeeec" align="center">0.0005</td>
+<td bgcolor="#eeeeec" align="right">363576</td>
+<td bgcolor="#eeeeec">{main}(  )</td>
+<td title="C:\wamp64\www\NDWorld\wp-content\plugins\simply-static\vendor\voku\simple_html_dom\src\voku\helper\SimpleXmlDomNodeBlank.php" bgcolor="#eeeeec">...\SimpleXmlDomNodeBlank.php<b>:</b>0</td>
+</tr>
+</table></font>

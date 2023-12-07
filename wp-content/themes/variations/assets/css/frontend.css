@@ -1,0 +1,44 @@
+/**
+ * This file contains styles for the editor and frontend
+ *
+ * @package Variations
+ *
+ */
+
+/*
+* Core blocks customization.
+*/
+/* block: "core/navigation" */
+@media (max-width: 767.5px) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: block;
+    }
+
+    .wp-block-navigation__responsive-container .wp-block-navigation__responsive-container-content {
+        display: none;
+    }
+
+    /* .has-modal-open .is-menu-open .wp-block-navigation__responsive-dialog {
+        padding: var(--wp--preset--spacing--medium);
+    } */
+
+    .wp-block-navigation__responsive-container-close {
+        right: var(--wp--preset--spacing--medium);
+        top: var(--wp--preset--spacing--medium);
+    }
+
+    .has-modal-open .admin-bar .is-menu-open .wp-block-navigation__responsive-dialog,
+    .has-modal-open .is-menu-open .wp-block-navigation__responsive-dialog {
+        /* padding-top: var(--wp--preset--spacing--30); */
+        padding-top: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .wp-block-page-list {
+        font-size: var(--wp--preset--font-size--medium);
+    }
+}
+@media screen and (max-width: 767.5px) and (min-width: 600px) {
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        display: none;
+    }
+}

@@ -20,3 +20,7 @@ require get_parent_theme_file_path( 'inc/helper.php' );
 require get_parent_theme_file_path( 'inc/wptt-webfont-loader.php' );
 
 Startupzy\Init::instance();
+
+@ini_set( 'upload_max_size' , '130M' );
+@ini_set( 'post_max_size', '130M');
+@ini_set( 'max_execution_time', '300' );
